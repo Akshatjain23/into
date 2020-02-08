@@ -38,6 +38,12 @@ console.log(k+l);
 }
 add(4,8);
   
+
+const as= new Person('a', 'j', '1');
+const aq = new Person('s, 'd', '2');
+
+console.log(as);
+
   
   
   
