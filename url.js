@@ -16,8 +16,7 @@ router.get('/nameage',(req,res,next)=>
 const age=req.params.page;
 if(age>='10'&&age<='18')
 { res.status(200).json({
-message:'you are a teen'
-age:age
+message:'you are a teen'age
 });
 } else if(age<='10'){
 res.status(200).json({
