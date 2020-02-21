@@ -21,10 +21,10 @@ message:'you are a teen'age
 });
 } else if(age<='10'){
 res.status(200).json({
-message:'you are a child'
+message:'you are a child'age
 });
 
 else{
-(res.status(200).json({message:'you are an adult'});
+(res.status(200).json({message:'you are an adult'age});
 )};
 module.exports=router;
