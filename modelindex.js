@@ -16,19 +16,19 @@ application.set("views",path.join(__dirname,"/views/"));
 
 application.engine("hbs",  expressHandlerbars({
     extname : "hbs",
-    defaultLayout : "mainlayout",
+    defaultLayout : "MainLayout",
     layoutsDir : __dirname + "/views/layouts"
 }));
 
 application.set("view engine","hbs");
 
 application.get("/",(req,res)=>{
-    //res.send("<h1>HELLO WORLD<h1>")
+    //res.send("<h1>Hello World<h1>")
     res.render("index",{})
 });
 
 application.use("/course",CourseController);
 
 application.listen("3000", ()=>{
-    console.log("localhost  started");
+    console.log("local host  started");
 });
